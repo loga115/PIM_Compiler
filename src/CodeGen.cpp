@@ -25,9 +25,6 @@ CodeGen::CodeGen(std::unique_ptr<ASTNode> ast, int size,
     if (matrix_size < 0) {
         throw std::invalid_argument("matrix size cannot be negative");
     }
-    if (matrix_size < 0) {
-        throw std::invalid_argument("matrix size cannot be negative");
-    }
     // Literal dimensions do not require a global #define.  Defer validation
     // until declarations and operations are collected so inputs such as
     // int A[2][2] remain valid while dimensionless programs fail clearly.
